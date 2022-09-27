@@ -3,7 +3,7 @@ from django.views.generic import TemplateView
 
 # Create your views here.
 class HomePageView(TemplateView):
-    template_name = "core/base.html"
+    template_name = "core/index.html"
     dicc_context = {"titulo": "Clase de Django Avanzado", "profesor": "Eder Lara T."}
 
     def get(self, request, *args, **kwargs):
